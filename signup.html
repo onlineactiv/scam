@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style type="text/css">
+/* Create four equal columns that floats next to each other */
+.login-content {
+	width: 100%;
+	background: red;
+	padding-left: 20%;
+}
+
+.loginform {
+	float: left;
+	width: 75%;
+	padding: 10px;
+}
+
+/* On screens that are 992px wide or less, go from four columns to two columns */
+@media screen and (max-width: 992px) {
+	.loginform {
+		width: 80%;
+	}
+}
+
+/* On screens that are 600px wide or less, make the columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+	.loginform {
+		width: 100%;
+	}
+	.login-content {
+		padding-left: 0%;
+	}
+}
+
+::placeholder {
+	color: white;
+	opacity: 1; /* Firefox */
+}
+
+::-ms-input-placeholder { /* Edge 12 -18 */
+	color: white;
+}
+
+div.input {
+	margin: 8px 0;
+	padding-bottom: 8px;
+}
+
+input[type=text], input[type=password] {
+	border: none;
+	border-bottom: 2px solid white;
+	background-color: inherit;
+	color: white;
+	width: 100%;
+	padding: 12px;
+	margin: 8px 0;
+	box-sizing: border-box
+}
+
+input[type=text]:focus, input[type=password]:focus {
+	background-color: white;
+	border: 2px solid inherit;
+	color: black;
+}
+
+a.forgot {
+	text-decoration: none;
+	float: right;
+	margin: 8px 0;
+}
+
+.button {
+	background-color: white;
+	border: none;
+	color: rgb(0, 128, 255);
+	padding: 10px 28px;;
+	text-align: center;
+	text-decoration: none;
+	width: 100%;
+	font-size: 18px;
+	margin: 8px 0;
+	border-radius: 8px;
+}
+
+.buttonback {
+	background-color: rgb(133, 180, 250);
+	border: none;
+	color: white;
+	padding: 10px 28px;;
+	text-align: center;
+	text-decoration: none;
+	width: 100%;
+	font-size: 18px;
+	margin: 8px 0;
+	border-radius: 8px;
+}
+
+.buttonback a {
+	text-decoration: none;
+}
+
+.buttonback a:link {
+	text-decoration: none;
+	background-color: rgb(133, 180, 250);
+	color: white;
+}
+
+a:link {
+	text-decoration: none;
+	background-color: rgb(133, 180, 250);
+	color: white;
+}
+
+p.login {
+	width: 110%;
+}
+
+a {
+	text-decoration: none;
+}
+</style>
+
+<title>Amazoon</title>
+</head>
+<body class="w3-container w3-blue">
+
+	<div class="w3-container w3-blue">
+		<h1 style="text-align: center;">
+			<strong><b><i>Signup</i></b></strong>
+		</h1>
+	</div>
+
+	<div class="w3-container w3-content">
+		<!--div class="w3-row-padding"-->
+
+		<div class="login-content">
+			<!--  pThe Paris area is one of the largest population centers in
+				Europe, with more than 12 million inhabitants./p-->
+			<form class="loginform">
+				<div class="input">
+					<label>Telephone <input type="text" name="username"
+						placeholder="Please enter the telephone number" />
+					</label>
+				</div>
+
+				<div class="input">
+					<label>Password <input type="password" name="passowrd"
+						placeholder="Please enter the password" />
+					</label>
+				</div>
+
+				<div class="input">
+					<label>Payment <input type="text" name="payment"
+						placeholder="Please enter the payment code" />
+					</label>
+				</div>
+
+				<div class="input">
+					<label>Invitation <input type="text" name="invitation"
+						placeholder="Please enter the invitation number" />
+					</label>
+				</div>
+				<input class="button" type="submit" name="register" value="Register" />
+				<button class="buttonback">
+					<a href="login.html">Already have an account?</a>
+				</button>
+			</form>
+		</div>
+	</div>
+
+</body>
+</html>
