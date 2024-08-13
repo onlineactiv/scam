@@ -1,0 +1,2 @@
+# scam
+This scam info
